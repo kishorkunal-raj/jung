@@ -4,6 +4,10 @@ sudo: false
 
 language: java
 
+arch:
+  - amd64
+  - ppc64le
+
 dist: trusty
 
 # openjdk8 is currently used for tools/deploy_snapshots.sh; if we stop using that JDK here,
