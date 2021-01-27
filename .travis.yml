@@ -16,6 +16,10 @@ jdk:
   - oraclejdk8
   - openjdk8
 
+jobs:
+  exclude:
+       - jdk: oraclejdk8
+         arch: ppc64le
 install:
   - mvn -v
   - mvn -B install -U -DskipTests=true
